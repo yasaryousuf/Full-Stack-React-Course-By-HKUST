@@ -46,9 +46,9 @@ class Main extends Component {
     };
 
     return (
-      <div>
+      <>
         <Header />
-        <div>
+        <>
           <Switch>
             <Route path="/home" component={HomePage} />{" "}
             <Route
@@ -66,9 +66,9 @@ class Main extends Component {
             <Route exact path="/contactus" component={Contact} />} / >
             <Redirect to="/home" />
           </Switch>{" "}
-        </div>{" "}
+        </>{" "}
         <Footer />
-      </div>
+      </>
     );
   }
 }
